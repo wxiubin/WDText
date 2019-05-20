@@ -6,8 +6,7 @@
 //  Copyright © 2019 wxiubin. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
-@interface WDText : NSObject
-
-@end
+#import <WDText/WDTextLayout.h>
+#import <WDText/WDTextAttachment.h>
+#import <WDText/WDTextBorderAttachment.h>
+#import <WDText/NSAttributedString+WDText.h>

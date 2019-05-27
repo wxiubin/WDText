@@ -40,7 +40,7 @@
 
 #pragma mark - WDTextDrawAble
 
-- (void)drawRect:(CGRect)rect { }
+- (void)drawRect:(CGRect)rect cancelled:(WDTextCancelled)cancelled { }
 
 @end
 
@@ -51,7 +51,7 @@
 
 @implementation WDTextImageAttachment (Draw)
 
-- (void)drawRect:(CGRect)rect {
+- (void)drawRect:(CGRect)rect cancelled:(WDTextCancelled)cancelled {
     if (!self.name.length) return;
 
     UIImage *image = [UIImage imageNamed:self.name];
@@ -59,6 +59,8 @@
 
     CGContextRef context = UIGraphicsGetCurrentContext();
     if (!context) return;
+
+    if (cancelled && cancelled()) return;
 
     CGContextDrawImage(context, self.rect, image.CGImage);
 }

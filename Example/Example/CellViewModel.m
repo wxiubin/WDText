@@ -101,7 +101,7 @@ static int __index = 0;
 }
 
 - (void)appendVIP {
-    WDTextImageAttachment *attachment = [[WDTextImageAttachment alloc] initWithSize:CGSizeMake(16, 16) action:@"点击了礼物"];
+    WDTextImageAttachment *attachment = [[WDTextImageAttachment alloc] initWithSize:CGSizeMake(16, 16) action:@"点击了月费姥爷"];
     attachment.name = @"livebase_dan_month";
     [self _appendAttachment:attachment];
 }

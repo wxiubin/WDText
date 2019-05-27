@@ -159,12 +159,14 @@
 
 @implementation WDTextBorderAttachment (Draw)
 
-- (void)drawRect:(CGRect)rect {
+- (void)drawRect:(CGRect)rect cancelled:(WDTextCancelled)cancelled {
 
     if (!self.image) return;
 
     CGContextRef context = UIGraphicsGetCurrentContext();
     if (!context) return;
+
+    if (cancelled && cancelled()) return;
 
     CGContextDrawImage(context, self.rect, self.image.CGImage);
 }

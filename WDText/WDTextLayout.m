@@ -106,7 +106,7 @@
 
 @implementation WDTextLayout (Draw)
 
-- (void)drawRect:(CGRect)rect {
+- (void)drawRect:(CGRect)rect cancelled:(WDTextCancelled)cancelled {
 
     CGContextRef context = UIGraphicsGetCurrentContext();
 
@@ -116,10 +116,16 @@
         CGContextTranslateCTM(context, 0, rect.size.height);
         CGContextScaleCTM(context, 1.0, -1.0);
     }
+
+    if (cancelled && cancelled()) return;
+
     CTFrameDraw(_ctFrame, context);
 
     for (WDTextAttachment *attachment in _attachments) {
-        [attachment drawRect:rect];
+
+        if (cancelled && cancelled()) return;
+
+        [attachment drawRect:rect cancelled:cancelled];
     }
 }
 

@@ -7,6 +7,7 @@
 //
 
 #import <WDText/WDTextLayout.h>
+#import <WDText/WDTextLabel.h>
 #import <WDText/WDTextAttachment.h>
 #import <WDText/WDTextBorderAttachment.h>
 #import <WDText/NSAttributedString+WDText.h>

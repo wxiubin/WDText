@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C201B7B229C1E7100955F07 /* WDTextLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C201B7A229C1E7100955F07 /* WDTextLayer.m */; };
+		5C201B7E229C1E8B00955F07 /* WDTextLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C201B7D229C1E8B00955F07 /* WDTextLabel.m */; };
+		5C201B7F229C1EE700955F07 /* WDTextLayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5C201B79229C1E7100955F07 /* WDTextLayer.h */; };
+		5C201B80229C1EE700955F07 /* WDTextLabel.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5C201B7C229C1E8B00955F07 /* WDTextLabel.h */; };
 		5CC692032292D26F00BF3A3B /* WDText.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 5CC692002292D26F00BF3A3B /* WDText.h */; };
 		5CC692332292D32D00BF3A3B /* WDTextAttachment.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC692322292D32D00BF3A3B /* WDTextAttachment.m */; };
 		5CC692392292D52000BF3A3B /* WDTextLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC692382292D52000BF3A3B /* WDTextLayout.m */; };
@@ -25,6 +29,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				5C201B7F229C1EE700955F07 /* WDTextLayer.h in CopyFiles */,
+				5C201B80229C1EE700955F07 /* WDTextLabel.h in CopyFiles */,
 				5CC692522292E5F700BF3A3B /* WDTextLayout.h in CopyFiles */,
 				5CC692512292E5F000BF3A3B /* NSAttributedString+WDText.h in CopyFiles */,
 				5CC692502292E5EB00BF3A3B /* WDTextBorderAttachment.h in CopyFiles */,
@@ -36,6 +42,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5C201B79229C1E7100955F07 /* WDTextLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDTextLayer.h; sourceTree = "<group>"; };
+		5C201B7A229C1E7100955F07 /* WDTextLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDTextLayer.m; sourceTree = "<group>"; };
+		5C201B7C229C1E8B00955F07 /* WDTextLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDTextLabel.h; sourceTree = "<group>"; };
+		5C201B7D229C1E8B00955F07 /* WDTextLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDTextLabel.m; sourceTree = "<group>"; };
 		5CC691FD2292D26F00BF3A3B /* libWDText.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWDText.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CC692002292D26F00BF3A3B /* WDText.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDText.h; sourceTree = "<group>"; };
 		5CC692312292D32D00BF3A3B /* WDTextAttachment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDTextAttachment.h; sourceTree = "<group>"; };
@@ -87,6 +97,10 @@
 				5CC6923D2292D79900BF3A3B /* WDTextAttachment+Private.h */,
 				5CC692372292D52000BF3A3B /* WDTextLayout.h */,
 				5CC692382292D52000BF3A3B /* WDTextLayout.m */,
+				5C201B79229C1E7100955F07 /* WDTextLayer.h */,
+				5C201B7A229C1E7100955F07 /* WDTextLayer.m */,
+				5C201B7C229C1E8B00955F07 /* WDTextLabel.h */,
+				5C201B7D229C1E8B00955F07 /* WDTextLabel.m */,
 				5CC6923A2292D5B900BF3A3B /* NSAttributedString+WDText.h */,
 				5CC6923B2292D5B900BF3A3B /* NSAttributedString+WDText.m */,
 			);
@@ -151,6 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CC692332292D32D00BF3A3B /* WDTextAttachment.m in Sources */,
+				5C201B7B229C1E7100955F07 /* WDTextLayer.m in Sources */,
+				5C201B7E229C1E8B00955F07 /* WDTextLabel.m in Sources */,
 				5CC692392292D52000BF3A3B /* WDTextLayout.m in Sources */,
 				5CC692482292E2AA00BF3A3B /* WDTextBorderAttachment.m in Sources */,
 				5CC6923C2292D5B900BF3A3B /* NSAttributedString+WDText.m in Sources */,

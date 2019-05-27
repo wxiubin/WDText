@@ -10,9 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef BOOL(^WDTextCancelled)(void);
+
 @protocol WDTextDrawAble <NSObject>
 
-- (void)drawRect:(CGRect)rect;
+- (void)drawRect:(CGRect)rect cancelled:(WDTextCancelled)cancelled;
 
 @end
 
